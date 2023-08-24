@@ -1,0 +1,70 @@
+:root {
+  --bg-nav: #f3324f;
+  --text-date: #e6e6e6;
+  --btn-primary: #d60726;
+  --btn-secondary: #3771c8;
+  --btn-thirh: #ffd321;
+  --text-nav: #fff;
+}
+/* link font Khmer Batdombang */
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300&display=swap");
+/* font popin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Koulen", cursive;
+}
+.currently-icon p {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.currently-icon .fas {
+  padding: 0px 50px;
+  font-size: 15px;
+}
+/* navbar */
+.navbar-bg {
+  background-color: var(--bg-nav);
+}
+.nav-link {
+  position: relative;
+  color: var(--text-nav);
+  height: 100%;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.nav-link:hover {
+  color: #333;
+}
+
+.nav-link::after {
+  opacity: 0;
+  transition: all 0.2s;
+  transform-origin: left;
+}
+.descrip {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+/* .nav-link:hover::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        background-color: #ffffff;
+        left: 0;
+        bottom: 0;
+        opacity: 1;
+        transition: 0.5s ease-out;
+      } */
+.fa-moon {
+  font-size: 20px;
+  margin: 0px 8px;
+  padding: 9px 30px;
+  border-radius: 100px;
+  color: var(--text-nav);
+  background-color: #000;
+}

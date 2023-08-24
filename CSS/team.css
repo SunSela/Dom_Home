@@ -1,0 +1,66 @@
+/* Code Thebible.Css */
+:root {
+  --bg-nav: #f3324f;
+  --text-date: #e6e6e6;
+  --btn-primary: #d60726;
+  --btn-secondary: #3771c8;
+  --btn-thirh: #ffd321;
+  --text-nav: #fff;
+}
+/* link font Khmer Batdombang */
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300&display=swap");
+/* font popin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Battambang", cursive;
+}
+.currently-icon p {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.currently-icon .fas {
+  padding: 0px 50px;
+  font-size: 15px;
+}
+/* navbar */
+.navbar-bg {
+  background-color: var(--bg-nav);
+}
+.nav-link {
+  position: relative;
+  color: var(--text-nav);
+  height: 100%;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.nav-link:hover {
+  background-color: var(--text-date);
+}
+
+.nav-link::after {
+  opacity: 0;
+  transition: all 0.2s;
+  transform-origin: left;
+}
+
+#icon {
+  width: 40px;
+  margin: 0px 20px;
+}
+
+.socail .iconix {
+  background-color: #232323;
+  width: 100px;
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: 0.5s ease;
+  color: #fff;
+}
+.socail .iconix:hover {
+  opacity: 1;
+  background-color: #000000;
+}

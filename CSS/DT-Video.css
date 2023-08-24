@@ -1,0 +1,149 @@
+:root {
+  --bg-nav: #f3324f;
+  --text-date: #e6e6e6;
+  --btn-primary: #d60726;
+  --btn-secondary: #3771c8;
+  --btn-thirh: #ffd321;
+  --text-nav: #fff;
+  --dark-text: #000;
+}
+/* link font Khmer Batdombang */
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300&display=swap");
+/* font popin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Battambang", cursive;
+}
+.currently-icon p {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.currently-icon .fas {
+  padding: 0px 50px;
+  font-size: 15px;
+}
+/* navbar */
+.navbar-bg {
+  background-color: var(--bg-nav);
+}
+.nav-link {
+  position: relative;
+  color: var(--text-nav);
+  height: 100%;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.nav-link:hover {
+  background-color: var(--text-date);
+}
+
+.nav-link::after {
+  opacity: 0;
+  transition: all 0.2s;
+  transform-origin: left;
+}
+
+/* .nav-link:hover::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        background-color: #ffffff;
+        left: 0;
+        bottom: 0;
+        opacity: 1;
+        transition: 0.5s ease-out;
+      } */
+.fa-moon {
+  font-size: 20px;
+  margin: 0px 8px;
+  padding: 9px 30px;
+  border-radius: 100px;
+  color: var(--text-nav);
+  background-color: #000;
+}
+.card-body .btn-note {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+.btn-readmore {
+  color: var(--bg-nav);
+}
+.btn-loadmore {
+  font-size: 16px;
+}
+.time-date {
+  margin: 10px 0px;
+}
+.time-date i {
+  padding: 20px 15px;
+  color: var(--bg-nav);
+  font-size: 10px;
+}
+.profile-area {
+  padding: 80px 0;
+}
+.card {
+  box-shadow: 0 0 30px rgab(0, 0, 0, 0.5);
+  /* border-radius: 15px; */
+  overflow: hidden;
+}
+
+.img1 img {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  height: 160px;
+  /* border-top-right-radius: 15px;
+  border-top-left-radius: 15px; */
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.card:hover .img1 img {
+  transform: scale(1.1);
+}
+.img2 img {
+  position: relative;
+  display: block;
+  /* margin-left: auto; */
+  margin-right: auto;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #fffcfc;
+  margin-top: -50px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.main-text,
+.month,
+.view,
+.min {
+  font-family: "Poppins", sans-serif;
+}
+.contents {
+  font-family: "Battambang", cursive;
+  font-size: 15px;
+}
+.loadmore-dt {
+  font-size: 10px;
+  font-family: "Battambang", cursive;
+  color: var(--dark-text);
+  transition: 0.5s;
+}
+.loadmore-dt:hover {
+  text-decoration: underline;
+  color: #000;
+}
+.loadmore-dt i {
+  font-size: 15px;
+  text-decoration: none;
+}
